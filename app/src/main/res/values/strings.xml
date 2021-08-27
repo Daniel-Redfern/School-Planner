@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">School Planner</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_add_item">AddItem</string>
+    <string name="title_activity_check_work">CheckWork</string>
+    <string name="title_activity_add_classes">AddClasses</string>
+    <string name="title_activity_check_items">CheckItems</string>
+    <string name="title_activity_create_course">CreateCourse</string>
+    <string name="title_activity_view_course">ViewCourse</string>
+    <string name="title_activity_view_assignment">ViewAssignment</string>
+    <string name="title_activity_display_image">DisplayImage</string>
+</resources>

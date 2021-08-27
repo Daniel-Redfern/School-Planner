@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+    android:icon="@drawable/ic_icon"
+    android:title="View Courses"
+    app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/item2"
+        android:title="Add Assignment"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item3"
+        android:title="Sort Assignments"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item android:id="@+id/sort_by_period"
+                android:title="By Course"/>
+
+            <item android:id="@+id/sort_by_date_due"
+                android:title="By Due Date"/>
+
+        </menu>
+
+    </item>
+
+</menu>

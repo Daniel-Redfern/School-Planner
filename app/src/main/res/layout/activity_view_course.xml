@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCourse"
+    android:background="#604020">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangle_with_rounded_corners_cream_color"
+        android:layout_centerHorizontal="true">
+
+
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/view_course_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="View Course"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="30dp"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Course Name"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="20dp"
+            android:id="@+id/view_course_name_text"
+            android:layout_below="@id/view_course_header_text"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/view_course_course_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_below="@id/view_course_name_text"
+            android:maxLength="50"
+            />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructor Name"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="20dp"
+            android:id="@+id/view_course_instructor_text"
+            android:layout_below="@id/view_course_course_name_edit_text"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/view_course_instructor_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_below="@id/view_course_instructor_text"
+            android:maxLength="50"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/view_course_horizontal_layout"
+            android:layout_below="@id/view_course_instructor_name_edit_text">
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_course_save_changes"
+            android:text="Save Changes"
+            android:textAlignment="center"
+            android:layout_below="@id/instructor_name_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="#FFFDC7"
+            android:layout_weight=".5"
+            />
+
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:id="@+id/view_course_remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Remove Course"
+            android:layout_below="@id/add_another_course"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="#FFFDC7"
+            android:layout_weight=".5"/>
+
+        </LinearLayout>
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:textAlignment="center"
+            android:id="@+id/view_course_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="Back To Home Page"
+            android:textColor="#FFFDC7"
+            android:layout_below="@id/view_course_horizontal_layout"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainPage"
+    tools:showIn="@layout/content_main_page"
+    android:id="@+id/main_page_back_layout"
+    android:background="#604020">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_show"
+        android:background="@drawable/three_dots_verticle_large_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:onClick="showPopup"
+        android:layout_margin="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_with_rounded_corners_cream_color"
+        android:layout_margin="20dp">
+
+
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_text_view_Current_Work_Items"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fancyfont"
+            android:text="No Assignments Due"
+            android:textSize="30dp"
+            />
+
+        <ScrollView
+            android:id="@+id/scroll_view_work_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_text_view_Current_Work_Items"
+            >
+
+        </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

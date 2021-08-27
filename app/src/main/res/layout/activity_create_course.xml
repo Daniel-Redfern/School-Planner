@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCourse"
+    android:background="#604020">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangle_with_rounded_corners_cream_color">
+
+
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/create_course_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Create Course"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="30dp"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Course Name"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="20dp"
+            android:id="@+id/cc_name_text"
+            android:layout_below="@id/create_course_header_text"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/course_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_below="@id/cc_name_text"
+            android:hint="Enter Course Name Here"
+            android:maxLength="50"
+            />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructor Name"
+            android:fontFamily="@font/fancyfont"
+            android:textSize="20dp"
+            android:id="@+id/cc_instructor_text"
+            android:layout_below="@id/course_name_edit_text"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/instructor_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_below="@id/cc_instructor_text"
+            android:hint="Enter Instructor Name Here"
+            android:maxLength="50"/>
+
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_another_course"
+            android:text="Add Another Course"
+            android:textAlignment="center"
+            android:layout_below="@id/instructor_name_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="#FFFDC7"
+            />
+
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:id="@+id/create_course_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Done"
+            android:layout_below="@id/add_another_course"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFDC7"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:textAlignment="center"
+            android:id="@+id/cc_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="#FFFDC7"
+            android:text="Back To Home Page"
+            android:layout_below="@id/create_course_done"
+            />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAssignment"
+    android:background="#604020"
+    android:id="@+id/add_item_back_layout"
+    >
+    <LinearLayout
+        android:id="@+id/main_layout_add_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_with_rounded_corners_cream_color"
+        android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/add_assignment_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Assignment"
+            android:fontFamily="@font/fancyfont"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/date_due_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Due"
+            android:fontFamily="@font/fancyfont"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:inputType="date"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/date_due_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM/DD/YYYY"
+            android:maxLength="10"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/item_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assignment Name"
+            android:fontFamily="@font/fancyfont"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/assignment_name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name Here"
+            android:maxLength="50"/>
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Description"
+            android:fontFamily="@font/fancyfont"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/assignment_description_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="(Not Required)"
+            />
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Image"
+            android:layout_gravity="center"
+            android:textColor="#FFFDC7"
+            android:id="@+id/add_image_button"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:text="ADD ANOTHER"
+            android:textSize="17dp"
+            android:textColor="#FFFDC7"
+            android:id="@+id/add_another_assignment_button"/>
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:text="Done"
+            android:textSize="17dp"
+            android:textColor="#FFFDC7"
+            android:id="@+id/add_item_save_button"/>
+    </RelativeLayout>
+
+        <Button
+            android:background="@drawable/custom_button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back To Main Page"
+            android:id="@+id/back_button"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="#FFFDC7"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
